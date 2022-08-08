@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar
+{   
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 1rem;
+    background-color: rgb(37, 4, 98);
+    color: white;
+    padding: 0.8rem 2rem;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.nav
+{
+    display: flex;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+    padding-top: 0.3rem;
+
+}
+
+.nav li{
+    padding: 0 1.5rem;
+}
+
+
