@@ -120,6 +120,67 @@ section
 }
 
 
+.heading
+{
+    text-align: center;
+}
+
+.heading h2
+{
+    font-size: 30px;
+}
+
+.heading span
+{
+    font-size: var(--p-font);
+    color: rgb(1, 166, 70);
+}
+
+.about_container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.about_img img
+{
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.about_text p
+{
+    font-size: var(--p-font);
+    font-weight: 1500;
+    text-align: justify;
+}
+
+.information
+{
+    margin: 1rem 0 1.4rem;
+}
+
+.information .info_box
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+.information .info_box .bx
+{
+    font-size: 22px;
+}
+
+
+.information .info_box span
+{
+    font-weight: 400;
+    margin-left: 1rem;
+}
 
 
 
