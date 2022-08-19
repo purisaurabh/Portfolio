@@ -29,6 +29,20 @@ body
 }
 
 
+/* ===================== for dark mode ===================== */
+
+body.active
+{
+    --text-color:#fff;
+    --bg-color:#0f0c27;
+}
+
+
+
+
+
+
+
 /* Home section  */
 
 section
@@ -41,6 +55,81 @@ section
     color: var(--bg-color);
     background:var(--main-color);
 }
+
+
+
+
+/* navigation bar  */
+
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73 , 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.logo
+{
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.navbar
+{
+    display: flex;
+}
+
+.navbar a
+{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar a:hover
+{
+    color: var(--hover);
+}
+
+#menu_icon
+{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+#darkmode
+{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .home
 {
@@ -365,16 +454,178 @@ form textarea
 
 
 
+/* =========================== Make it responsive ================== */
+
+@media(max-width:991px)
+{
+    header
+    {
+        padding: 18px 4%;
+    }
+
+    section
+    {
+        padding: 50px 4%;
+    }
+
+}
+
+@media(max-width: 768px)
+{
+    :root
+    {
+        --big-font:2.4rem;
+        --medium-font:1.2rem;
+    }
+
+}
+
+
+@media(max-width:768px)
+{
+    :root
+    {
+        --big-font:2.4rem;
+        --medium-font:1.2rem;
+    }
+
+    header
+    {
+        padding: 11px 4%;
+    }
+
+    #menu_icon
+    {
+        display: initial;
+        color: var(--text-color);
+    }
+
+    header .navbar
+    {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2 ease;
+        text-align: center;
+    }
+
+    .navbar.active
+    {
+        top: 100%;
+    }
+
+    .navbar a
+    {
+        padding: 1.5rem;
+        display: block;
+        background:var(--bg-color);
+    }
+
+    #darkmode
+    {
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
+    }
+
+    .home
+    {
+        grid-template-columns: 0.5fr 3fr;        
+    }
+
+    .home_img
+    {
+        order: initial;
+    }
+
+    .home_text
+    {
+        grid-column: 1/3;
+        padding-left: 1.4rem;
+    }
+
+    .about_container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .about_img
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill_container
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .skill_img img
+    {
+        padding-left: 0;
+    }
+
+    .skill_img
+    {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact_form form
+    {
+        width: 300px;
+    }
+
+    .contact_button
+    {
+        margin-left: 25%;
+    }
+
+}
 
 
 
 
+@media(max-width:340px)
+{
+    :root
+    {
+        --big-font :1.7rem;
+        --medium-font:1.1rem;
+    }
 
+    .home_text span
+    {
+        font-size: 1rem;
+    }
 
+    .home_text h2
+    {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
 
+    .information .info_box span
+    {
+        font-size: 1rem;
+    }
 
+    .contact_form
+    {
+        width: 300px;
+    }
 
-
+    .contact_button
+    {
+        margin-left: 25%;
+    }
+}
 
 
 
