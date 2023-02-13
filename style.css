@@ -37,12 +37,6 @@ body.active
     --bg-color:#0f0c27;
 }
 
-
-
-
-
-
-
 /* Home section  */
 
 section
@@ -115,20 +109,6 @@ header
     font-size: 22px;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .home
@@ -271,10 +251,6 @@ header
     font-weight: 400;
     margin-left: 1rem;
 }
-
-
-
-
 /* ==================== skills ====================== */
 
 .skill_container
